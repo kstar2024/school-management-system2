@@ -1,0 +1,229 @@
+:root {
+  --background-image: url('path/to/your/wooden.jpg');
+  --main-color: snow;
+  --simple-font: 'Comic Sans MS', cursive, sans-serif;
+}
+
+:root {
+  --wooden: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Horror/wooden.jpg);
+  --forest: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Horror/forest.jpg);
+  --sweets: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Cute/sweets1.jpg);
+  --bubbles: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Cute/bubbles.jpg);
+  --crackle: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Minimalist/crackle.jpg);
+  --sparkle: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Minimalist/sparkle.jpg);
+  --rainbow: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Rainbow/rainbow-paint.jpg);
+  --smoke: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Rainbow/rainbow-smoke.jpg);
+  --nightsky: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Sleek/nightsky.jpg);
+  --sunset: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Sleek/sunset.jpg);
+
+  
+  /* COLORS */
+  --blood: #8a0303;
+  --slime: #228B22;
+  --gloom: #2B363B;
+  --candy: #ee698e;
+  --purple: #7B1E7A;
+  --blue: #2176AE;
+  --olive: #A6C48A;    
+  --royal: #0A1045;
+  --lilac: #B8AED6;
+  --snow: #f4f9e9;
+  
+  /* FONTS */
+  --scary-font: 'Metal Mania';
+  --typewriter-font: 'Inconsolata';
+  --funny-font: 'Balsamiq Sans';
+  --curly-font: 'Pacifico';
+  --old-style-font: 'Cinzel';
+  --simple-font: 'Noto Sans HK';
+  --funky-font: 'MuseoModerno';
+  --sweet-font: 'Lobster';
+}
+
+
+body {
+  /*
+  CHALLENGE: change the background to one you like
+  */
+  --background-image: var(--wooden);
+  /*
+  CHALLENGE: change the main color to one you like!
+  */
+  --main-color: var(--blue);
+  
+   /* 
+  CHALLENGE: change the font to one you think is cool
+  */
+  font-family: var(--simple-font);
+}
+
+
+.grid {
+  /* 
+  BONUS CHALLENGE: adjust how many columns you'd like to have
+  */
+ column-count: 2;
+ column-gap: 10px;
+}
+
+
+.img {
+  /* 
+  border-image: var(--sweets) 100;
+  */
+
+}
+
+
+body {
+  font-family: var(--simple-font);
+  margin: 0;
+  padding: 0;
+  background: var(--background-image) no-repeat center center fixed;
+  background-size: cover;
+  color: var(--main-color);
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+header {
+
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header .header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  font-size: xx-large;
+  
+}
+
+main h2 {
+  color: #333;
+  border-bottom: 2px solid #444;
+  padding-bottom: 10px;
+}
+
+main p, main ul {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-image: var(--forest);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+  min-width: 250px;
+}
+
+.footer-section h3 {
+  border-bottom: 2px solid #444;
+  padding-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+  background-color: #555;
+}
+
+.social-icon i {
+  vertical-align: middle;
+}
+
+  form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color:#B8AED6s;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+

@@ -1,0 +1,202 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color:#4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  header .logo img {
+    height: 50px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color:#4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  footer ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  footer .social-media a img {
+    height: 30px;
+    margin: 0 5px;
+  }
+  
+  /* Login container styles */
+  .login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-container .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .login-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .login-container .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-container button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Student dashboard styles */
+  .student-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 800px;
+  }
+  
+  .student-dashboard h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-section, .academic-performance, .class-schedule, .assignments, .attendance, .extracurricular-activities, .notices-announcements, .resources, .contact-teachers, .calendar-section, .chat-section {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .profile-section img {
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    height: 100px;
+  }
+  
+  .profile-section button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .profile-section button:hover {
+    background-color: #45a049;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .chat-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+  }
+  
+  .chat-message {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .chat-section input, .chat-section button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
