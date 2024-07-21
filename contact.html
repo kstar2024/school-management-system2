@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Value Academy School</title>
+    <link rel="stylesheet"  type = "text/css "href="contact.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <ul>
+          <header class="header">
+            <div class="header-nav">
+              <br>
+              <br>
+              <br>
+            <li><a href="staff portal.html">Staff Portal</a></li>
+            <li><a href="student portal.html">Student Portal</a></li>
+            <li><a href="tenders.html">Tenders</a></li>
+            <li><a href="reach us on.html">Reach Us on : </a></li>
+            <a href="https://wa.me/+254791848737" style="background-colors:" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:info@gva.ac.ke/felisila2015@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+254791848737" class="social-icon"><i class="fas fa-phone"></i></a>
+            <a href="https://www.tiktok.com/@knatalie24?_t=8nfQXS2m8hS&_r=1" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.coms" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </ul>
+      </header>
+    <header>
+        <header class="header">
+            <div class="header-content">
+                <div class="header-text">
+                    <h1>Great Value Academy School</h1>
+                    <p class="motto">"Home of Innovation and Technological Ideas"</p>
+                </div>
+                <div class="header-image">
+                    <img src="Grea.png" alt="Academy logo">
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="home.php">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="applicationpage.php">Admissions</a></li>
+              <li><a href="academics.html">Academics</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="events.html"> Events </a></li>
+              <li><a href="#news">News Announcements</a></li>
+              <li><a href="adminlogin.php" class="blink">Admission Portal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-us">
+        <h1>Contact Us</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone_number">phone number:</label>
+                <input type="phone_number" id="phone number" name="phone_number" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+   <!-- Include EmailJS SDK -->
+   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS with your User ID
+        emailjs.init('hjhb4GCXcP5gEvYJU'); // Replace 'your_user_id' with your EmailJS User ID
+
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone number = document.getElementById('phone number').value;
+            const message = document.getElementById('message').value;
+
+            // Send email using EmailJS
+            emailjs.send('service_kie403j', 'template_nkshqea', {
+                name: name,
+                email: email,
+                phone number: phone number,
+                message: message
+            }).then(function(response) {
+                alert('Message sent successfully!');
+                document.getElementById('contact-form').reset(); // Reset the form
+            }, function(error) {
+                alert('Failed to send the message. Please try again.');
+                console.log('EmailJS Error:', error);
+            });
+        });
+</script>
+    <footer>
+        <p>&copy; 2024 Great Value Academy School. All rights reserved.</p>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>
+<body>
+   
+</body>
+</html>
